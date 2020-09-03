@@ -1,0 +1,92 @@
+/* @chartset "utf-8";
+设置字符集为utf-8格式 */
+
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dd,li,dt,input,textarea,select,figure{
+    margin: 0;
+    padding: 0;
+}
+.w{
+    /* width: 1170px; */
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+img{
+    vertical-align: top;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    /* inherit 继承 */
+}
+li{
+    list-style: none;
+    /* background-image: url();  */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.clear:after{
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+.clear{
+    zoom: 1;
+}
+html{
+    /* font-size: 12px; */
+    font-family: Arial,"微软雅黑", "宋体";
+}
+input,textarea,select{
+    outline: none;
+}
+/* 上下二选一皆可 */
+/* input:focus,textarea:focus,select:focus{
+    outline: none;
+} */
+textarea{
+    resize: none;
+}
+input[type="button"],input[type="reset"],input[type="submit"],input[type="file"],button{
+    cursor: pointer;
+}
+.sl{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.icon {
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+ }
+
+ /* 手机端 */
+@media screen and (min-width: 320px) and (max-width: 640px){
+  figure dd{
+      width: 49%;
+      margin: 10px .5%;
+      float: left;
+      position: relative;
+  }
+}
+/* PC端 */
+@media screen and (min-width: 641px) and (max-width: 1200px){
+  figure dd{
+      width: 32.333%;
+      margin: 10px .5%;
+      float: left;
+      position: relative;
+  }
+}   
+@media screen and (min-width: 1025px) and (max-width: 1920px){
+  figure dd{
+      width: 32.333%;
+      margin: 10px .5%;
+      float: left;
+      position: relative;
+  }
+}
